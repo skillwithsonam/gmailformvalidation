@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gmail Form Creation</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="images/logo.png" height="50">
+            <h3 class="title">Create your Google Account</h3>
+            <p>to continue to Gmail</p>
+        </div>
+        <form name="register" class="registration" onsubmit="return validateForm()" novalidate>
+            <input type="text" name="firstName" id="firstName" placeholder="First name"
+            required>
+            <input type="text" name="lastName" id="lastName" placeholder="Last name"
+            required>
+            <span id="errorname" class="error"></span><br>
+            <input type="text" name="userName" id="userName" placeholder="Username"
+            required style="width: 48%;">
+            <br><span class="hint" id="erroruname">You can use letters, numbers and fullstops</span>
+            <br>
+            <input type="password" name="password" id="password" placeholder="Password"
+            required>
+            <input type="password" name="confirm" id="confirm" placeholder="Confirm">
+            <br><span class="hint" id="errorpwd">Use 8 or more Characters with mix of letters, numbers
+                & symbols
+            </span>
+            <br><br>
+            <div class="showpwd">
+                <input type="checkbox" class="check">Show Password
+            </div>
+            <br><br><br>
+            <a href="signin" class="signin">Sign in Instead</a>
+            <input type="submit" class="btn" value="Next">
+        </form>
+        <div class="account">
+            <img src="images/account.jpg">
+            <p class="imgcap">One account. All of Google<br>working for you.</p>
+        </div>
+        <div class="footer"></div>
+    </div>
+</body>
+
+</html>
